@@ -113,6 +113,6 @@
 2. row is bounded in a time range
 3. output is in csv format and also stdout
 4. ***temperature*** is from white_noice
-5. ***icecream_melt_speed equal*** = "0.5 * *temperature* + 20 + *noise*"
-6. ***icecream_sold*** = int ( 30 * sigmoid ( *noise*) ), with noise has mean 0, std 1
-7. ***icecream_finished_before_melt*** = *icecream_melt_speed* > 32 ? false : true
+5. ***icecream_melt_speed equal*** = "0.5 * ***temperature*** + 20 + ***noise***"
+6. ***icecream_sold*** = int ( 30 * sigmoid ( ***noise*** ) ), with noise has mean 0.1, std 1
+7. ***icecream_finished_before_melt*** = ***icecream_melt_speed*** > 32 ? false : true
